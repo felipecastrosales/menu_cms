@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_product_info_do_modificadors",
+  "info": {
+    "displayName": "Info do Modificador"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "minQuantity": {
+      "type": "integer",
+      "required": true,
+      "min": 0,
+      "default": 0
+    },
+    "maxQuantity": {
+      "type": "integer"
+    },
+    "allowRepeated": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

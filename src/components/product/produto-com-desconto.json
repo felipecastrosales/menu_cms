@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_product_produto_com_descontos",
+  "info": {
+    "displayName": "Produto com Desconto",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product.product"
+    },
+    "discountPercentage": {
+      "type": "float",
+      "max": 100,
+      "min": 0
+    },
+    "availableWeekdays": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::weekday.weekday"
+    }
+  }
+}

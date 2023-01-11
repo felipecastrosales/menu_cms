@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_product_modificador_com_categorias",
+  "info": {
+    "displayName": "Modificador com Categoria"
+  },
+  "options": {},
+  "attributes": {
+    "Info": {
+      "type": "component",
+      "repeatable": false,
+      "component": "product.info-do-modificador"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category"
+    }
+  }
+}

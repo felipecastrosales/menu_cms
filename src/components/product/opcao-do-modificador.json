@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_product_opcao_do_modificadors",
+  "info": {
+    "displayName": "Opção do Modificador",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "price": {
+      "type": "decimal"
+    }
+  }
+}

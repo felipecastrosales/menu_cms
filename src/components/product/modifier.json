@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_product_modifiers",
+  "info": {
+    "displayName": "Modificador",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "options": {
+      "displayName": "Opção do Modificador",
+      "type": "component",
+      "repeatable": true,
+      "component": "product.opcao-do-modificador"
+    },
+    "info": {
+      "displayName": "Info do Modificador",
+      "type": "component",
+      "repeatable": false,
+      "component": "product.info-do-modificador"
+    }
+  }
+}

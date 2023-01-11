@@ -53,17 +53,36 @@
       "type": "decimal"
     },
     "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
       "allowedTypes": [
         "images"
       ],
-      "type": "media",
-      "multiple": false,
       "pluginOptions": {
         "i18n": {
           "localized": false
         }
+      }
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "products"
+    },
+    "options": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
       },
-      "required": true
+      "type": "dynamiczone",
+      "components": [
+        "product.modifier",
+        "product.modificador-com-produto",
+        "product.modificador-com-categoria"
+      ]
     }
   }
 }

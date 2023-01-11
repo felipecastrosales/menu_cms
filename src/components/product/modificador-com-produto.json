@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_product_modificador_com_produtos",
+  "info": {
+    "displayName": "Modificador com Produto",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "products": {
+      "displayName": "Produto com Desconto",
+      "type": "component",
+      "repeatable": true,
+      "component": "product.produto-com-desconto"
+    },
+    "Info": {
+      "type": "component",
+      "repeatable": false,
+      "component": "product.info-do-modificador"
+    }
+  }
+}
