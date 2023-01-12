@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_menu_listagem_por_categorias",
+  "info": {
+    "displayName": "Listagem por Categoria",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category"
+    }
+  }
+}
