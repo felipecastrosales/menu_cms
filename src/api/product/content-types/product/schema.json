@@ -23,7 +23,8 @@
         }
       },
       "type": "string",
-      "required": true
+      "required": true,
+      "unique": false
     },
     "description": {
       "pluginOptions": {
@@ -31,7 +32,8 @@
           "localized": true
         }
       },
-      "type": "text"
+      "type": "text",
+      "required": true
     },
     "originalBasePrice": {
       "pluginOptions": {
@@ -40,7 +42,6 @@
         }
       },
       "type": "decimal",
-      "required": false,
       "min": 0,
       "max": 1000
     },
@@ -50,9 +51,12 @@
           "localized": false
         }
       },
-      "type": "decimal"
+      "type": "decimal",
+      "required": true,
+      "min": 0,
+      "max": 1000
     },
-    "Image": {
+    "image": {
       "type": "media",
       "multiple": false,
       "required": true,

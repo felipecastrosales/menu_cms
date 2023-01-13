@@ -4,8 +4,7 @@
   "info": {
     "singularName": "weekday",
     "pluralName": "weekdays",
-    "displayName": "Dia da Semana",
-    "description": ""
+    "displayName": "Dia da Semana"
   },
   "options": {
     "draftAndPublish": false

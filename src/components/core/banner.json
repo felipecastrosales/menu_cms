@@ -1,17 +1,18 @@
 {
   "collectionName": "components_core_banners",
   "info": {
-    "displayName": "Banner"
+    "displayName": "Banner",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "image": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "title": {
       "type": "text"

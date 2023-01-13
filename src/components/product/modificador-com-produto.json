@@ -12,7 +12,7 @@
       "repeatable": true,
       "component": "product.produto-com-desconto"
     },
-    "Info": {
+    "info": {
       "type": "component",
       "repeatable": false,
       "component": "product.info-do-modificador"

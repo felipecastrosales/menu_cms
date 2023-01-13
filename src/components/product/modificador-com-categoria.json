@@ -5,7 +5,7 @@
   },
   "options": {},
   "attributes": {
-    "Info": {
+    "info": {
       "type": "component",
       "repeatable": false,
       "component": "product.info-do-modificador"

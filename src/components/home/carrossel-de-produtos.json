@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_home_carrossel_de_produtos",
+  "info": {
+    "displayName": "Carrossel de Produtos"
+  },
+  "options": {},
+  "attributes": {
+    "category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category"
+    }
+  }
+}

@@ -4,8 +4,7 @@
   "info": {
     "singularName": "home",
     "pluralName": "homes",
-    "displayName": "Tela Principal",
-    "description": ""
+    "displayName": "Tela Principal"
   },
   "options": {
     "draftAndPublish": true
@@ -26,8 +25,8 @@
       "components": [
         "core.banner",
         "menu.listagem-por-categoria",
-        "product.carrossel-de-produtos",
-        "menu.botao-manu"
+        "home.carrossel-de-produtos",
+        "home.botao-menu"
       ],
       "required": true
     }
