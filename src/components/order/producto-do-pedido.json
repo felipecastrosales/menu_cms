@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_order_producto_do_pedidos",
+  "info": {
+    "displayName": "Producto do Pedido"
+  },
+  "options": {},
+  "attributes": {
+    "product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product.product"
+    },
+    "totalPrice": {
+      "type": "decimal",
+      "required": true
+    },
+    "basePrice": {
+      "type": "decimal",
+      "required": true
+    }
+  }
+}
