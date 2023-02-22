@@ -1,7 +1,7 @@
 {
-  "collectionName": "components_order_producto_do_pedidos",
+  "collectionName": "components_order_produto_do_pedidos",
   "info": {
-    "displayName": "Producto do Pedido"
+    "displayName": "Produto do Pedido"
   },
   "options": {},
   "attributes": {
@@ -17,6 +17,12 @@
     "basePrice": {
       "type": "decimal",
       "required": true
+    },
+    "modifiers": {
+      "displayName": "Modificador de Produto de Pedido",
+      "type": "component",
+      "repeatable": true,
+      "component": "order.modificador-de-produto-de-pedido"
     }
   }
 }

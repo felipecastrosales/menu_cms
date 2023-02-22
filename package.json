@@ -13,7 +13,7 @@
     "@strapi/plugin-documentation": "^4.6.0",
     "@strapi/plugin-i18n": "4.6.0",
     "@strapi/plugin-users-permissions": "4.6.0",
-    "@strapi/strapi": "4.6.0",
+    "@strapi/strapi": "^4.6.0",
     "better-sqlite3": "7.4.6",
     "strapi-plugin-populate-deep": "^2.0.0"
   },
@@ -21,7 +21,7 @@
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "fa1cfddb-9cb7-4c32-9a82-d7161e6c5c7d"
+    "uuid": "499723d5-3651-4ec2-a499-3f804f7d9cbf"
   },
   "engines": {
     "node": ">=14.19.1 <=18.x.x",

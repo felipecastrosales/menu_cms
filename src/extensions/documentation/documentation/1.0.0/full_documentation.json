@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-02-08T23:32:10.564Z"
+    "x-generation-date": "2023-02-22T12:39:22.742Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -28,7 +28,7 @@
   },
   "servers": [
     {
-      "url": "http://localhost:1337/api",
+      "url": "http://localhost:1338/api",
       "description": "Development server"
     }
   ],
@@ -9701,6 +9701,9 @@
                 },
                 {
                   "$ref": "#/components/schemas/CoreBanner"
+                },
+                {
+                  "$ref": "#/components/schemas/HomeCarrosselDeProdutos"
                 }
               ]
             }
@@ -9731,6 +9734,9 @@
                     },
                     {
                       "$ref": "#/components/schemas/CoreBanner"
+                    },
+                    {
+                      "$ref": "#/components/schemas/HomeCarrosselDeProdutos"
                     }
                   ]
                 }
@@ -9757,6 +9763,9 @@
                 },
                 {
                   "$ref": "#/components/schemas/CoreBanner"
+                },
+                {
+                  "$ref": "#/components/schemas/HomeCarrosselDeProdutos"
                 }
               ]
             }
@@ -9839,6 +9848,9 @@
                     },
                     {
                       "$ref": "#/components/schemas/CoreBanner"
+                    },
+                    {
+                      "$ref": "#/components/schemas/HomeCarrosselDeProdutos"
                     }
                   ]
                 }
@@ -9925,6 +9937,9 @@
                     },
                     {
                       "$ref": "#/components/schemas/CoreBanner"
+                    },
+                    {
+                      "$ref": "#/components/schemas/HomeCarrosselDeProdutos"
                     }
                   ]
                 }
@@ -10042,6 +10057,9 @@
                     },
                     {
                       "$ref": "#/components/schemas/CoreBanner"
+                    },
+                    {
+                      "$ref": "#/components/schemas/HomeCarrosselDeProdutos"
                     }
                   ]
                 }
@@ -10128,6 +10146,9 @@
                     },
                     {
                       "$ref": "#/components/schemas/CoreBanner"
+                    },
+                    {
+                      "$ref": "#/components/schemas/HomeCarrosselDeProdutos"
                     }
                   ]
                 }
@@ -10236,7 +10257,7 @@
               "products": {
                 "type": "array",
                 "items": {
-                  "$ref": "#/components/schemas/OrderProductoDoPedidoComponent"
+                  "$ref": "#/components/schemas/OrderProdutoDoPedidoComponent"
                 }
               }
             }
@@ -10268,7 +10289,7 @@
               "products": {
                 "type": "array",
                 "items": {
-                  "$ref": "#/components/schemas/OrderProductoDoPedidoComponent"
+                  "$ref": "#/components/schemas/OrderProdutoDoPedidoComponent"
                 }
               },
               "createdAt": {
@@ -10342,7 +10363,7 @@
               "products": {
                 "type": "array",
                 "items": {
-                  "$ref": "#/components/schemas/OrderProductoDoPedidoComponent"
+                  "$ref": "#/components/schemas/OrderProdutoDoPedidoComponent"
                 }
               },
               "createdAt": {
@@ -10449,7 +10470,7 @@
               "products": {
                 "type": "array",
                 "items": {
-                  "$ref": "#/components/schemas/OrderProductoDoPedidoComponent"
+                  "$ref": "#/components/schemas/OrderProdutoDoPedidoComponent"
                 }
               },
               "createdAt": {
@@ -10523,7 +10544,7 @@
               "products": {
                 "type": "array",
                 "items": {
-                  "$ref": "#/components/schemas/OrderProductoDoPedidoComponent"
+                  "$ref": "#/components/schemas/OrderProdutoDoPedidoComponent"
                 }
               },
               "createdAt": {
@@ -10582,7 +10603,7 @@
           }
         }
       },
-      "OrderProductoDoPedidoComponent": {
+      "OrderProdutoDoPedidoComponent": {
         "type": "object",
         "properties": {
           "id": {
@@ -11901,6 +11922,24 @@
           "basePrice": {
             "type": "number",
             "format": "float"
+          },
+          "modifiers": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "number"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "price": {
+                  "type": "number",
+                  "format": "float"
+                }
+              }
+            }
           }
         }
       },
@@ -11909,7 +11948,6 @@
           "title",
           "description",
           "basePrice",
-          "image",
           "locale"
         ],
         "type": "object",
@@ -11981,8 +12019,7 @@
             "required": [
               "title",
               "description",
-              "basePrice",
-              "image"
+              "basePrice"
             ],
             "type": "object",
             "properties": {

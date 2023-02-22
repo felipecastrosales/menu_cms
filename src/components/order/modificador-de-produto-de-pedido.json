@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_order_modificador_de_produto_de_pedidos",
+  "info": {
+    "displayName": "Modificador de Produto de Pedido"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text",
+      "required": true
+    },
+    "price": {
+      "type": "decimal"
+    }
+  }
+}

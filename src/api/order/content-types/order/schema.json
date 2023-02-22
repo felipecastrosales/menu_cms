@@ -28,10 +28,10 @@
       "required": true
     },
     "products": {
-      "displayName": "Producto do Pedido",
+      "displayName": "Produto do Pedido",
       "type": "component",
       "repeatable": true,
-      "component": "order.producto-do-pedido",
+      "component": "order.produto-do-pedido",
       "required": true
     }
   }
