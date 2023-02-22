@@ -25,7 +25,8 @@
       "type": "dynamiczone",
       "components": [
         "menu.listagem-por-categoria",
-        "core.banner"
+        "core.banner",
+        "home.carrossel-de-produtos"
       ],
       "required": true,
       "min": 0
