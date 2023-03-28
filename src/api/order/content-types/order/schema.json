@@ -4,7 +4,8 @@
   "info": {
     "singularName": "order",
     "pluralName": "orders",
-    "displayName": "Pedido"
+    "displayName": "Pedido",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -32,6 +33,16 @@
       "type": "component",
       "repeatable": true,
       "component": "order.produto-do-pedido",
+      "required": true
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "preparing",
+        "delivered",
+        "paid"
+      ],
+      "default": "preparing",
       "required": true
     }
   }
