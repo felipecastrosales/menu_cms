@@ -44,6 +44,9 @@
       ],
       "default": "preparing",
       "required": true
+    },
+    "history": {
+      "type": "json"
     }
   }
 }

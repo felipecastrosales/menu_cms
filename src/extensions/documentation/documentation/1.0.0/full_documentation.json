@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-03-13T23:44:05.186Z"
+    "x-generation-date": "2023-03-16T01:17:59.261Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -28,7 +28,7 @@
   },
   "servers": [
     {
-      "url": "http://localhost:1338/api",
+      "url": "http://localhost:1337/api",
       "description": "Development server"
     }
   ],
@@ -1267,6 +1267,9 @@
                                                     "properties": {
                                                       "title": {
                                                         "type": "string"
+                                                      },
+                                                      "number": {
+                                                        "type": "integer"
                                                       },
                                                       "createdAt": {
                                                         "type": "string",
@@ -2648,6 +2651,9 @@
                                                         "properties": {
                                                           "title": {
                                                             "type": "string"
+                                                          },
+                                                          "number": {
+                                                            "type": "integer"
                                                           },
                                                           "createdAt": {
                                                             "type": "string",
@@ -4033,6 +4039,9 @@
                                                         "properties": {
                                                           "title": {
                                                             "type": "string"
+                                                          },
+                                                          "number": {
+                                                            "type": "integer"
                                                           },
                                                           "createdAt": {
                                                             "type": "string",
@@ -5450,6 +5459,9 @@
                                                           "title": {
                                                             "type": "string"
                                                           },
+                                                          "number": {
+                                                            "type": "integer"
+                                                          },
                                                           "createdAt": {
                                                             "type": "string",
                                                             "format": "date-time"
@@ -6834,6 +6846,9 @@
                                                         "properties": {
                                                           "title": {
                                                             "type": "string"
+                                                          },
+                                                          "number": {
+                                                            "type": "integer"
                                                           },
                                                           "createdAt": {
                                                             "type": "string",
@@ -9127,6 +9142,9 @@
                                                                   "title": {
                                                                     "type": "string"
                                                                   },
+                                                                  "number": {
+                                                                    "type": "integer"
+                                                                  },
                                                                   "createdAt": {
                                                                     "type": "string",
                                                                     "format": "date-time"
@@ -10268,7 +10286,8 @@
                   "delivered",
                   "paid"
                 ]
-              }
+              },
+              "history": {}
             }
           }
         }
@@ -10309,6 +10328,7 @@
                   "paid"
                 ]
               },
+              "history": {},
               "createdAt": {
                 "type": "string",
                 "format": "date-time"
@@ -10391,6 +10411,7 @@
                   "paid"
                 ]
               },
+              "history": {},
               "createdAt": {
                 "type": "string",
                 "format": "date-time"
@@ -10506,6 +10527,7 @@
                   "paid"
                 ]
               },
+              "history": {},
               "createdAt": {
                 "type": "string",
                 "format": "date-time"
@@ -10588,6 +10610,7 @@
                   "paid"
                 ]
               },
+              "history": {},
               "createdAt": {
                 "type": "string",
                 "format": "date-time"
@@ -11754,6 +11777,9 @@
                                                   "properties": {
                                                     "title": {
                                                       "type": "string"
+                                                    },
+                                                    "number": {
+                                                      "type": "integer"
                                                     },
                                                     "createdAt": {
                                                       "type": "string",
@@ -13552,6 +13578,9 @@
                                                                 "properties": {
                                                                   "title": {
                                                                     "type": "string"
+                                                                  },
+                                                                  "number": {
+                                                                    "type": "integer"
                                                                   },
                                                                   "createdAt": {
                                                                     "type": "string",
@@ -15578,6 +15607,9 @@
                                                                     "properties": {
                                                                       "title": {
                                                                         "type": "string"
+                                                                      },
+                                                                      "number": {
+                                                                        "type": "integer"
                                                                       },
                                                                       "createdAt": {
                                                                         "type": "string",
@@ -17608,6 +17640,9 @@
                                                                     "properties": {
                                                                       "title": {
                                                                         "type": "string"
+                                                                      },
+                                                                      "number": {
+                                                                        "type": "integer"
                                                                       },
                                                                       "createdAt": {
                                                                         "type": "string",
@@ -19670,6 +19705,9 @@
                                                                       "title": {
                                                                         "type": "string"
                                                                       },
+                                                                      "number": {
+                                                                        "type": "integer"
+                                                                      },
                                                                       "createdAt": {
                                                                         "type": "string",
                                                                         "format": "date-time"
@@ -21700,6 +21738,9 @@
                                                                       "title": {
                                                                         "type": "string"
                                                                       },
+                                                                      "number": {
+                                                                        "type": "integer"
+                                                                      },
                                                                       "createdAt": {
                                                                         "type": "string",
                                                                         "format": "date-time"
@@ -22463,12 +22504,16 @@
       "WeekdayLocalizationRequest": {
         "required": [
           "title",
+          "number",
           "locale"
         ],
         "type": "object",
         "properties": {
           "title": {
             "type": "string"
+          },
+          "number": {
+            "type": "integer"
           },
           "locale": {
             "type": "string"
@@ -22483,12 +22528,16 @@
         "properties": {
           "data": {
             "required": [
-              "title"
+              "title",
+              "number"
             ],
             "type": "object",
             "properties": {
               "title": {
                 "type": "string"
+              },
+              "number": {
+                "type": "integer"
               },
               "locale": {
                 "type": "string"
@@ -22505,6 +22554,9 @@
           },
           "title": {
             "type": "string"
+          },
+          "number": {
+            "type": "integer"
           },
           "createdAt": {
             "type": "string",
@@ -22824,6 +22876,9 @@
             "properties": {
               "title": {
                 "type": "string"
+              },
+              "number": {
+                "type": "integer"
               },
               "createdAt": {
                 "type": "string",
@@ -23147,6 +23202,9 @@
             "properties": {
               "title": {
                 "type": "string"
+              },
+              "number": {
+                "type": "integer"
               },
               "createdAt": {
                 "type": "string",
@@ -23502,6 +23560,9 @@
               "title": {
                 "type": "string"
               },
+              "number": {
+                "type": "integer"
+              },
               "createdAt": {
                 "type": "string",
                 "format": "date-time"
@@ -23824,6 +23885,9 @@
             "properties": {
               "title": {
                 "type": "string"
+              },
+              "number": {
+                "type": "integer"
               },
               "createdAt": {
                 "type": "string",
