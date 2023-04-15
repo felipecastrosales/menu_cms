@@ -15,6 +15,7 @@
     "@strapi/plugin-users-permissions": "4.6.0",
     "@strapi/strapi": "^4.6.0",
     "better-sqlite3": "7.4.6",
+    "cors": "^2.8.5",
     "strapi-plugin-populate-deep": "^2.0.0"
   },
   "author": {
